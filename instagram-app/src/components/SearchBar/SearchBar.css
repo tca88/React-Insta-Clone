@@ -1,0 +1,72 @@
+.search-bar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 95%;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.logo-icon {
+    width: 50px;
+    height: 45px;
+    margin-right: .5rem;
+}
+
+.brand-name {
+    width: 125px;
+    height: 45px;
+}
+
+.vertical-pipe {
+    width: 1px;
+    height: 45px;
+    background: black;
+    margin-right: .5rem;
+}
+
+.search-bar {
+    width: 200px;
+    height: 30px;
+}
+
+input {
+    font-size: 1rem;
+    text-align: center;
+    background: #FAFAFA;
+    outline: 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.account-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.discover-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: .5rem;
+}
+
+.search-like-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: .5rem;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+}

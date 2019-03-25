@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    max-width: 642px;
 }
 
 .username-container {
@@ -43,11 +44,13 @@
     flex-direction: row;
     padding-left: 1rem;
     margin-bottom: .5rem;
+    margin-top: 1rem;
 }
 
 .like-icon {
     width: 5%;
     height: 5%;
+    margin-right: .5rem;
 }
 
 .comment-icon {
@@ -59,4 +62,12 @@
     font-size: 1rem;
     font-weight: bold;
     padding-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+
+.timestamp {
+    font-size: .75rem;
+    padding-left: 1rem;
+    color: grey;
 }

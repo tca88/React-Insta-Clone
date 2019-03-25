@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import dummyData from './dummy-data.js';
 import PostContainer from './components/PostContainer/PostContainer.js';
+import SearchBar from './components/SearchBar/SearchBar.js'
 
 class App extends Component {
   constructor() {
@@ -13,8 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-        </header>
+          <SearchBar />
           {this.state.instagramData.map((data, id) => (
             <PostContainer key={id} fullInstagramData={data} />
           ))}

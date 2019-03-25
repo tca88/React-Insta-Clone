@@ -30,6 +30,9 @@ const PostContainer = props => {
                 <CommentSection key={id} commentData={comment} />
                 ))}
             </section>
+            <div className="timestamp">
+               <p>{props.fullInstagramData.timestamp}</p>
+            </div>
         </div>
     )
 }
