@@ -1,5 +1,7 @@
 import React from 'react';
 import CommentSection from '../CommentSection/CommentSection.js';
+import like from '../img/like.png';
+import comment from '../img/comment.png';
 
 const PostContainer = props => {
     
@@ -12,9 +14,13 @@ const PostContainer = props => {
             {props.fullInstagramData.username}
             </p>
         </div>
-        <section>
+        <div>
             <img className="post-image" src={props.fullInstagramData.imageUrl} alt="post" />
-        </section>
+        </div>
+        <div className="like-comment-section">
+            <img className="like-icon" src={like} alt="like icon" />
+            <img className="comment-icon" src={comment} alt="comment icon" />
+        </div>
         {props.fullInstagramData.comments.map((comment, id) => (
         <CommentSection key={id} commentData={comment} />
     ))}
