@@ -39,22 +39,19 @@ const PostContainer = props => {
 }
 
 PostContainer.propTypes = {
-    instagramData: PropTypes.arrayOf(
-        PropTypes.shape({
-        username: PropTypes.string,
-        thumbnailUrl: PropTypes.string,
-        imageUrl: PropTypes.string,
+    fullInstagramData: PropTypes.shape({
+        username: PropTypes.string.isRequired,
+        thumbnailUrl: PropTypes.string.isRequired,
+        imageUrl: PropTypes.string.isRequired,
         likes: PropTypes.number,
         timestamp: PropTypes.string,
         comments: PropTypes.arrayOf(
             PropTypes.shape({
             username: PropTypes.string,
             text: PropTypes.string,
-            name: PropTypes.string,
             })
         )
         })
-        )
 }
 
 export default PostContainer;
