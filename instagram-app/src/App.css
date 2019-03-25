@@ -1,1 +1,9 @@
 
+.App {
+  margin: 0 auto;
+  max-width: 642px;
+  border: 1px solid #E7E7E7;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+

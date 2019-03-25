@@ -15,11 +15,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
         </header>
-        <div className="post-container">
           {this.state.instagramData.map((data, id) => (
             <PostContainer key={id} fullInstagramData={data} />
           ))}
-        </div>
       </div>
     );
   }
