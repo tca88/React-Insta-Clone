@@ -59,13 +59,13 @@ class CommentSection extends Component {
   }
 }
 
-CommentSection.propTypes = {
-  commentsArray: PropTypes.arrayOf(
-    PropTypes.shape({
-      username: PropTypes.string,
-      text: PropTypes.string
-    })
-  )
-};
+// CommentSection.propTypes = {
+//   commentsArray: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       username: PropTypes.string,
+//       text: PropTypes.string
+//     })
+//   )
+// };
 
 export default CommentSection;

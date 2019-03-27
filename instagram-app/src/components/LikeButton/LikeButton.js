@@ -51,8 +51,8 @@ class LikeButton extends Component {
   }
 }
 
-LikeButton.propTypes = {
-  likes: PropTypes.number
-};
+// LikeButton.propTypes = {
+//   likes: PropTypes.number
+// };
 
 export default LikeButton;
