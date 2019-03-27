@@ -63,7 +63,9 @@ class PostsPage extends Component {
     }
     return (
       <div className="posts-container">
-        <button onClick={this.logout}>Logout</button>
+        <button className="logout-button" onClick={this.logout}>
+          Logout
+        </button>
         <div className="instagram-app">
           <SearchBar
             posts={this.state.posts}

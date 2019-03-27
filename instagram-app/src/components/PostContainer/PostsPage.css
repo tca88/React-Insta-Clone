@@ -18,7 +18,33 @@
 }
 
 .loader {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vh;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
-  margin-left: 800px;
-  margin-top: 400px;
+}
+
+.logout-button {
+  font-size: 1.4rem;
+  background: white;
+  color: gray;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 8rem;
+  padding-top: 2rem;
+}
+
+.logout-button:hover {
+  cursor: pointer;
+  color: #0267d6;
+}
+
+.logout-button:focus {
+  outline: 0;
 }

@@ -27,20 +27,24 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <form>
+        <form className="login-form">
           <input
             type="text"
             placeholder="username"
             name="username"
+            className="login-fields"
             onChange={this.onChange}
           />
           <input
             type="text"
             placeholder="password"
             name="password"
+            className="login-fields"
             onChange={this.onChange}
           />
-          <button onClick={this.login}>Login</button>
+          <button onClick={this.login} className="login-button">
+            Login
+          </button>
         </form>
       </div>
     );
