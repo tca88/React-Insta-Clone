@@ -17,7 +17,7 @@ class CommentSection extends Component {
   handleChange = event => {
     this.setState({
       newComment: {
-        username: "Trish",
+        username: localStorage.getItem("username"),
         [event.target.name]: event.target.value
       }
     });

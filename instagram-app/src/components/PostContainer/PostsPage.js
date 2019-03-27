@@ -8,15 +8,13 @@ import PropTypes from "prop-types";
 
 class PostsPage extends Component {
   state = {
-    posts: [],
-    username: ""
+    posts: []
   };
   componentDidMount() {
     console.log("CDM running");
     setTimeout(() => {
       this.setState({
         posts: dummyData,
-        username: "Trish",
         postCache: []
       });
     }, 1000);
@@ -50,6 +48,11 @@ class PostsPage extends Component {
     });
   };
 
+  logout = event => {
+    localStorage.removeItem("username");
+    document.location.reload();
+  };
+
   render() {
     if (this.state.posts.length === 0) {
       return (
@@ -60,6 +63,7 @@ class PostsPage extends Component {
     }
     return (
       <div className="posts-container">
+        <button onClick={this.logout}>Logout</button>
         <div className="instagram-app">
           <SearchBar
             posts={this.state.posts}
@@ -74,19 +78,19 @@ class PostsPage extends Component {
     );
   }
 }
-// PostsPage.propTypes = {
-//   posts: PropTypes.shape({
-//     username: PropTypes.string.isRequired,
-//     thumbnailUrl: PropTypes.string.isRequired,
-//     imageUrl: PropTypes.string.isRequired,
-//     likes: PropTypes.number,
-//     timestamp: PropTypes.string,
-//     comments: PropTypes.arrayOf(
-//       PropTypes.shape({
-//         username: PropTypes.string,
-//         text: PropTypes.string
-//       })
-//     )
-//   })
-// };
+PostsPage.propTypes = {
+  posts: PropTypes.shape({
+    username: PropTypes.string.isRequired,
+    thumbnailUrl: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired,
+    likes: PropTypes.number,
+    timestamp: PropTypes.string,
+    comments: PropTypes.arrayOf(
+      PropTypes.shape({
+        username: PropTypes.string,
+        text: PropTypes.string
+      })
+    )
+  })
+};
 export default PostsPage;
