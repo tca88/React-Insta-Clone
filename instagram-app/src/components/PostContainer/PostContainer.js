@@ -7,26 +7,21 @@ import PropTypes from "prop-types";
 
 class PostContainer extends Component {
   state = {
-    commentsArray: []
+    commentsArray: [],
+    newDate: []
   };
 
   componentDidMount() {
-    console.log("CDM running");
+    // console.log("CDM running");
     this.setState({
-      commentsArray: this.props.post.comments
-    });
-  }
-
-  newDateFormat() {
-    const newDate = moment(this.props.post.timestamp).format("YYYY-MM-DD");
-    console.log(newDate);
-    this.setState({
-      date: newDate
+      commentsArray: this.props.post.comments,
+      newDate: this.props.post.timestamp.split(",")[0]
     });
   }
 
   render() {
-    console.log(this.state.commentsArray);
+    // console.log(this.props.post.timestamp.split(",")[0]);
+    // console.log(this.state.date);
     return (
       <div className="post-container">
         <div className="username-container">
@@ -55,7 +50,7 @@ class PostContainer extends Component {
           />
         </section>
         <div className="timestamp">
-          <p>{this.newDateFormat}</p>
+          <p>{moment(this.state.newDate, "MMM Do YYYY").fromNow()}</p>
         </div>
       </div>
     );

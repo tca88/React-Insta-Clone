@@ -57,7 +57,7 @@ class App extends Component {
     if (this.state.posts.length === 0) {
       return (
         <div className="loader">
-          <Loader type="ThreeDots" color="#00BFFF" height="300" width="300" />
+          <Loader type="ThreeDots" color="white" height="200" width="200" />
         </div>
       );
     }
