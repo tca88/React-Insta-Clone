@@ -42,14 +42,16 @@ class CommentSection extends Component {
           </div>
         ))}
         <section>
-          <form onSubmit={this.addNewComment}>
+          <form onSubmit={this.addNewComment} className="comment-field-section">
             <input
+              className="comment-field"
               type="text"
               id="text"
               name="text"
+              placeholder="Add a comment..."
               onChange={this.handleChange}
             />
-            <button>Submit</button>
+            <button className="comment-submit">Post</button>
           </form>
         </section>
       </div>
@@ -58,8 +60,12 @@ class CommentSection extends Component {
 }
 
 CommentSection.propTypes = {
-  username: PropTypes.string,
-  text: PropTypes.string
+  commentsArray: PropTypes.arrayOf(
+    PropTypes.shape({
+      username: PropTypes.string,
+      text: PropTypes.string
+    })
+  )
 };
 
 export default CommentSection;

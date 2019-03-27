@@ -1,9 +1,24 @@
+.container {
+  max-width: 900px;
+  /* border: 2px solid grey; */
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 3px rgba(85, 85, 85, 0.6);
+  background: white;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
 
 .App {
   margin: 0 auto;
   max-width: 642px;
-  border: 1px solid #E7E7E7;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
+.loader {
+  margin: 0 auto;
+  margin-left: 800px;
+  margin-top: 400px;
+}

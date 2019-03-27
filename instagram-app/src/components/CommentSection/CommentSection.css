@@ -1,15 +1,42 @@
 .comment-section {
-    margin-bottom: 1rem;
-    width: 100%;
-    padding-left: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding-left: 1rem;
 }
 
 .comment-username {
-    font-size: 1rem;
-    font-weight: bold;
-    padding-bottom: 
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: ;
 }
 
 .comment-text {
-    font-size: 1rem;
+  font-size: 1rem;
+}
+
+.comment-field-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #e7e7e7;
+  width: 95%;
+  margin-left: 1rem;
+}
+
+.comment-field {
+  border: 0;
+  width: 100%;
+  background: white;
+  text-align: left;
+}
+
+.comment-submit {
+  border: 0;
+  background: white;
+  color: #0267d6;
+  font-size: 1rem;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import moment from "moment";
 import CommentSection from "../CommentSection/CommentSection.js";
 import LikeButton from "../LikeButton/LikeButton.js";
 import "./PostContainer.css";
@@ -13,6 +14,14 @@ class PostContainer extends Component {
     console.log("CDM running");
     this.setState({
       commentsArray: this.props.post.comments
+    });
+  }
+
+  newDateFormat() {
+    const newDate = moment(this.props.post.timestamp).format("YYYY-MM-DD");
+    console.log(newDate);
+    this.setState({
+      date: newDate
     });
   }
 
@@ -46,7 +55,7 @@ class PostContainer extends Component {
           />
         </section>
         <div className="timestamp">
-          <p>{this.props.post.timestamp}</p>
+          <p>{this.newDateFormat}</p>
         </div>
       </div>
     );

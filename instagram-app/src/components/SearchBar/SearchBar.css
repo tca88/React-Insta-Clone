@@ -1,93 +1,93 @@
 .search-bar-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 1rem;
-    width: 95%;
-    align-items: center;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #E7E7E7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 95%;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e7e7e7;
+  padding-top: 4rem;
 }
 
 .logo-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .logo-icon {
-    width: 50px;
-    height: 45px;
-    margin-right: .5rem;
+  width: 50px;
+  height: 45px;
+  margin-right: 0.5rem;
 }
 
 .brand-name {
-    width: 125px;
-    height: 45px;
+  width: 125px;
+  height: 45px;
 }
 
 .vertical-pipe {
-    width: 1px;
-    height: 45px;
-    background: black;
-    margin-right: .5rem;
+  width: 1px;
+  height: 45px;
+  background: black;
+  margin-right: 0.5rem;
 }
 
 .search-bar {
-    width: 200px;
-    height: 30px;
+  width: 200px;
+  height: 30px;
 }
 
 input {
-    font-size: 1rem;
-    text-align: center;
-    background: #FAFAFA;
-    outline: 0;
-    border: 1px solid lightgray;
-    border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  background: #fafafa;
+  outline: 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }
 
 .account-section {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .discover-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: .5rem;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
 }
 
 .search-like-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: .5rem;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
 }
 
 .profile-icon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .search-bar-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .search-bar {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .search-button {
-    width: 40px;
-    height: 30px;
+  width: 40px;
+  height: 30px;
+  border: 0;
 }
 
 .search-icon {
-    width: 20px;
-    height: 20px;
+  width: 30px;
+  height: 30px;
 }
-

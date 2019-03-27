@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import like from "../img/like.png";
+import liked from "../img/liked.png";
 import comment from "../img/comment.png";
 import PropTypes from "prop-types";
 
@@ -31,9 +32,16 @@ class LikeButton extends Component {
         <div className="like-comment-icons">
           <img
             onClick={this.toggleLike}
-            className="like-icon"
+            className={`like-icon${this.state.liked ? " gone" : ""}`}
+            // className="like-icon"
             src={like}
             alt="like icon"
+          />
+          <img
+            className={`liked-icon${this.state.liked ? " show" : ""}`}
+            onClick={this.toggleLike}
+            src={liked}
+            alt="liked icon"
           />
           <img className="comment-icon" src={comment} alt="comment icon" />
         </div>
@@ -42,5 +50,9 @@ class LikeButton extends Component {
     );
   }
 }
+
+LikeButton.propTypes = {
+  likes: PropTypes.number
+};
 
 export default LikeButton;
