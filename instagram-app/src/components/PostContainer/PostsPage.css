@@ -1,6 +1,5 @@
-.posts-container {
+/* .posts-container {
   max-width: 900px;
-  /* border: 2px solid grey; */
   margin: 0 auto;
   margin-top: 2rem;
   border-radius: 10px;
@@ -8,14 +7,14 @@
   background: white;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-}
+} */
 
-.instagram-app {
+/* .instagram-app {
   margin: 0 auto;
   max-width: 642px;
   margin-top: 3rem;
   margin-bottom: 3rem;
-}
+} */
 
 .loader {
   display: flex;
@@ -27,7 +26,7 @@
   margin: 0 auto;
 }
 
-.logout-button {
+/* .logout-button {
   font-size: 1rem;
   background: white;
   color: gray;
@@ -48,4 +47,4 @@
 
 .logout-button:focus {
   outline: 0;
-}
+} */

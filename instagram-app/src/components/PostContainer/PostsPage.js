@@ -7,6 +7,53 @@ import SearchBar from "../SearchBar/SearchBar.js";
 import Loader from "react-loader-spinner";
 import PropTypes from "prop-types";
 
+const PostsContainer = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 3px rgba(85, 85, 85, 0.6);
+  background: white;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+`;
+
+const InstagramApp = styled.div`
+  margin: 0 auto;
+  max-width: 642px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+`;
+
+const Button = styled.button`
+  ${props =>
+    props.logout &&
+    css`
+      font-size: 1rem;
+      background: white;
+      border-radius: 10px;
+      border: 0;
+      color: gray;
+      font-weight: bold;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+      padding-right: 9rem;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      margin-bottom: -2rem;
+
+      &:hover {
+        cursor: pointer;
+        color: #0267d6;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    `};
+`;
 class PostsPage extends Component {
   state = {
     posts: []
@@ -63,11 +110,11 @@ class PostsPage extends Component {
       );
     }
     return (
-      <div className="posts-container">
-        <button className="logout-button" onClick={this.logout}>
+      <PostsContainer>
+        <Button logout onClick={this.logout}>
           Logout
-        </button>
-        <div className="instagram-app">
+        </Button>
+        <InstagramApp>
           <SearchBar
             posts={this.state.posts}
             onSearchSubmit={this.onSearchSubmit}
@@ -76,8 +123,8 @@ class PostsPage extends Component {
           {this.state.posts.map((post, index) => (
             <PostContainer key={index} index={index} post={post} />
           ))}
-        </div>
-      </div>
+        </InstagramApp>
+      </PostsContainer>
     );
   }
 }
