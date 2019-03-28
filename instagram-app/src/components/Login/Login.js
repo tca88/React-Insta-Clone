@@ -1,4 +1,11 @@
 import React, { Component } from "react";
+import styled, { css } from "styled-components";
+import {
+  Button,
+  Text,
+  Form,
+  InputField
+} from "../ReusableStyles/ReusableStyles";
 import "./Login.css";
 
 class Login extends Component {
@@ -26,27 +33,25 @@ class Login extends Component {
 
   render() {
     return (
-      <div>
-        <form className="login-form">
-          <input
-            type="text"
-            placeholder="username"
-            name="username"
-            className="login-fields"
-            onChange={this.onChange}
-          />
-          <input
-            type="text"
-            placeholder="password"
-            name="password"
-            className="login-fields"
-            onChange={this.onChange}
-          />
-          <button onClick={this.login} className="login-button">
-            Login
-          </button>
-        </form>
-      </div>
+      <Form loginForm>
+        <InputField
+          login
+          type="text"
+          placeholder="username"
+          name="username"
+          onChange={this.onChange}
+        />
+        <InputField
+          login
+          type="text"
+          placeholder="password"
+          name="password"
+          onChange={this.onChange}
+        />
+        <Button login onClick={this.login}>
+          Login
+        </Button>
+      </Form>
     );
   }
 }

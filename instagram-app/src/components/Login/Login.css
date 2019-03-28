@@ -1,31 +1,31 @@
-.login-form {
+/* .login-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 100vh;
   align-items: center;
-}
+} */
 
-.login-fields {
+/* .login-fields {
   padding: 1rem;
   margin-right: 1rem;
   font-size: 2rem;
   border-radius: 5px;
   text-align: left;
-}
+} */
 
-.login-button {
+/* .login-button {
   padding: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
   font-size: 2rem;
   border-radius: 5px;
-}
+} */
 
-.login-button:hover {
+/* .login-button:hover {
   cursor: pointer;
 }
 
 .login-button:focus {
   outline: 0;
-}
+} */

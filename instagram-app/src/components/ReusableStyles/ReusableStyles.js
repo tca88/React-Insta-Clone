@@ -39,6 +39,24 @@ const Button = styled.button`
       color: #0267d6;
       font-size: 1rem;
     `};
+
+  ${props =>
+    props.login &&
+    css`
+      padding: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      font-size: 2rem;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    `};
 `;
 
 const Text = styled.span`
@@ -68,11 +86,11 @@ const Text = styled.span`
 `;
 
 const Form = styled.form`
-  display: flex;
-  flex-direction: row;
   ${props =>
     props.commentForm &&
     css`
+      display: flex;
+      flex-direction: row;
       margin-bottom: 1rem;
       padding-right: 1rem;
       padding-top: 1rem;
@@ -83,8 +101,10 @@ const Form = styled.form`
     `};
 
   ${props =>
-    props.loginForn &&
+    props.loginForm &&
     css`
+      display: flex;
+      flex-direction: row;
       justify-content: center;
       height: 100vh;
       align-items: center;
@@ -98,6 +118,16 @@ const InputField = styled.input`
       border: 0;
       width: 100%;
       background: white;
+      text-align: left;
+    `};
+
+  ${props =>
+    props.login &&
+    css`
+      padding: 1rem;
+      margin-right: 1rem;
+      font-size: 2rem;
+      border-radius: 5px;
       text-align: left;
     `};
 `;
