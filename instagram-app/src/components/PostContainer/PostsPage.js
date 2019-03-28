@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import dummyData from "../../dummy-data.js";
+import styled, { css } from "styled-components";
 import "./PostsPage.css";
 import PostContainer from "./PostContainer.js";
 import SearchBar from "../SearchBar/SearchBar.js";

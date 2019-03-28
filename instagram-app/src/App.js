@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import PostsPage from "./components/PostContainer/PostsPage.js";
 import withAuthenticate from "./components/authentication/withAuthenticate";
 import Login from "./components/Login/Login";
+import styled, { css } from "styled-components";
+import { Reset } from "styled-reset";
 
 const ComponentFromWithAuthenticate = withAuthenticate(PostsPage)(Login);
 
@@ -19,6 +21,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Reset />
         <ComponentFromWithAuthenticate loggedIn={this.state.loggedIn} />
       </div>
     );
