@@ -3,6 +3,7 @@ import like from "../img/like.png";
 import liked from "../img/liked.png";
 import comment from "../img/comment.png";
 import PropTypes from "prop-types";
+import "./LikeButton.css";
 
 class LikeButton extends Component {
   state = {

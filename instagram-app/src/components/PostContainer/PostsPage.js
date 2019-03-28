@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import dummyData from "../../dummy-data.js";
 import styled, { css } from "styled-components";
-import "./PostsPage.css";
 import PostContainer from "./PostContainer.js";
 import SearchBar from "../SearchBar/SearchBar.js";
 import Loader from "react-loader-spinner";
 import PropTypes from "prop-types";
+import { Button, UsernameText } from "../ReusableStyles/ReusableStyles";
 
 const PostsContainer = styled.div`
   max-width: 900px;
@@ -25,35 +25,16 @@ const InstagramApp = styled.div`
   margin-bottom: 3rem;
 `;
 
-const Button = styled.button`
-  ${props =>
-    props.logout &&
-    css`
-      font-size: 1rem;
-      background: white;
-      border-radius: 10px;
-      border: 0;
-      color: gray;
-      font-weight: bold;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      width: 100%;
-      padding-right: 9rem;
-      margin-top: 4rem;
-      padding-top: 2rem;
-      margin-bottom: -2rem;
-
-      &:hover {
-        cursor: pointer;
-        color: #0267d6;
-      }
-
-      &:focus {
-        outline: 0;
-      }
-    `};
+const LoaderStyle = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 `;
+
 class PostsPage extends Component {
   state = {
     posts: []
@@ -104,9 +85,9 @@ class PostsPage extends Component {
   render() {
     if (this.state.posts.length === 0) {
       return (
-        <div className="loader">
+        <LoaderStyle>
           <Loader type="ThreeDots" color="white" height="200" width="200" />
-        </div>
+        </LoaderStyle>
       );
     }
     return (
