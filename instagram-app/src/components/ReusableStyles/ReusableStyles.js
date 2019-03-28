@@ -96,7 +96,7 @@ const Form = styled.form`
       padding-top: 1rem;
       padding-bottom: 1rem;
       border-top: 1px solid #e7e7e7;
-      width: 95%;
+      width: 92.5%;
       margin-left: 1rem;
     `};
 
