@@ -12,6 +12,18 @@ import {
 } from "../ReusableStyles/ReusableStyles";
 import "./LikeButton.css";
 
+const LikeCommentSection = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const LikeCommentIcons = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+`;
 class LikeButton extends Component {
   state = {
     likes: 0
@@ -36,12 +48,11 @@ class LikeButton extends Component {
 
   render() {
     return (
-      <div className="like-comment-section">
-        <div className="like-comment-icons">
+      <LikeCommentSection>
+        <LikeCommentIcons>
           <img
             onClick={this.toggleLike}
             className={`like-icon${this.state.liked ? " gone" : ""}`}
-            // className="like-icon"
             src={like}
             alt="like icon"
           />
@@ -52,9 +63,9 @@ class LikeButton extends Component {
             alt="liked icon"
           />
           <img className="comment-icon" src={comment} alt="comment icon" />
-        </div>
+        </LikeCommentIcons>
         <Text likes>{this.state.likes} likes</Text>
-      </div>
+      </LikeCommentSection>
     );
   }
 }

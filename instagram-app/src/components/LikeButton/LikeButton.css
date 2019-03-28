@@ -1,15 +1,15 @@
-.like-comment-section {
+/* .like-comment-section {
   display: flex;
   flex-direction: column;
-}
+} */
 
-.like-comment-icons {
+/* .like-comment-icons {
   display: flex;
   flex-direction: row;
   padding-left: 1rem;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
-}
+} */
 
 .like-icon {
   display: inline-block;
