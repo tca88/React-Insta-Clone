@@ -1,6 +1,21 @@
 import React, { Component } from "react";
-import "./CommentSection.css";
+import styled, { css } from "styled-components";
+import {
+  Button,
+  Text,
+  Form,
+  InputField
+} from "../ReusableStyles/ReusableStyles";
 import PropTypes from "prop-types";
+
+const CommentContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding-left: 1rem;
+`;
 
 class CommentSection extends Component {
   state = {
@@ -34,25 +49,24 @@ class CommentSection extends Component {
     return (
       <div>
         {this.state.commentsArray.map((comment, index) => (
-          <div key={index} className="comment-section">
-            <p className="comment-text">
-              <span className="comment-username">{comment.username}</span>{" "}
-              {comment.text}
-            </p>
-          </div>
+          <CommentContainer key={index}>
+            <Text>
+              <Text username>{comment.username}</Text> {comment.text}
+            </Text>
+          </CommentContainer>
         ))}
         <section>
-          <form onSubmit={this.addNewComment} className="comment-field-section">
-            <input
-              className="comment-field"
+          <Form commentForm onSubmit={this.addNewComment}>
+            <InputField
+              comment
               type="text"
               id="text"
               name="text"
               placeholder="Add a comment..."
               onChange={this.handleChange}
             />
-            <button className="comment-submit">Post</button>
-          </form>
+            <Button post>Post</Button>
+          </Form>
         </section>
       </div>
     );

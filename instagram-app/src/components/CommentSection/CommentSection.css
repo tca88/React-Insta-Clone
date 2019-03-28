@@ -1,19 +1,19 @@
-.comment-section {
+/* .comment-section {
   margin-bottom: 1rem;
   width: 100%;
   padding-left: 1rem;
-}
+} */
 
-.comment-username {
+/* .comment-username {
   font-size: 1rem;
   font-weight: bold;
 }
 
 .comment-text {
   font-size: 1rem;
-}
+} */
 
-.comment-field-section {
+/* .comment-field-section {
   display: flex;
   flex-direction: row;
   margin-bottom: 1rem;
@@ -23,21 +23,21 @@
   border-top: 1px solid #e7e7e7;
   width: 95%;
   margin-left: 1rem;
-}
+} */
 
-.comment-field {
+/* .comment-field {
   border: 0;
   width: 100%;
   background: white;
   text-align: left;
-}
+} */
 
-.comment-submit {
+/* .comment-submit {
   border: 0;
   background: white;
   color: #0267d6;
   font-size: 1rem;
-}
+} */
 
 /* .timestamp {
   font-size: 1rem;

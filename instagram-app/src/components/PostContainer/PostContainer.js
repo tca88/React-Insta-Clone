@@ -3,9 +3,8 @@ import moment from "moment";
 import CommentSection from "../CommentSection/CommentSection.js";
 import LikeButton from "../LikeButton/LikeButton.js";
 import styled, { css } from "styled-components";
-import "./PostContainer.css";
 import PropTypes from "prop-types";
-import { Button, UsernameText, Text } from "../ReusableStyles/ReusableStyles";
+import { Button, Text } from "../ReusableStyles/ReusableStyles";
 
 const IndivPosts = styled.div`
   width: 100%;
@@ -14,6 +13,7 @@ const IndivPosts = styled.div`
   max-width: 642px;
   border: 1.5px solid #e7e7e7;
   margin-top: 2rem;
+  padding-bottom: 2rem;
   box-shadow: 0 0 8px 2px rgba(138, 138, 138, 0.4);
 `;
 
@@ -65,7 +65,7 @@ class PostContainer extends Component {
             src={this.props.post.thumbnailUrl}
             alt="thumbnail of user"
           />
-          <UsernameText>{this.props.post.username}</UsernameText>
+          <Text username>{this.props.post.username}</Text>
         </UsernameContainer>
         <div>
           <PostImage src={this.props.post.imageUrl} alt="post" />

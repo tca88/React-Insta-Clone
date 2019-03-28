@@ -3,6 +3,13 @@ import like from "../img/like.png";
 import liked from "../img/liked.png";
 import comment from "../img/comment.png";
 import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+import {
+  Button,
+  Text,
+  Form,
+  InputField
+} from "../ReusableStyles/ReusableStyles";
 import "./LikeButton.css";
 
 class LikeButton extends Component {
@@ -46,7 +53,7 @@ class LikeButton extends Component {
           />
           <img className="comment-icon" src={comment} alt="comment icon" />
         </div>
-        <p className="total-likes">{this.state.likes} likes</p>
+        <Text likes>{this.state.likes} likes</Text>
       </div>
     );
   }
