@@ -43,7 +43,7 @@ class Login extends Component {
         />
         <InputField
           login
-          type="text"
+          type="password"
           placeholder="password"
           name="password"
           onChange={this.onChange}
