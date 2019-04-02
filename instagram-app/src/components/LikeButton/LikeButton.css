@@ -1,0 +1,50 @@
+/* .like-comment-section {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .like-comment-icons {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+} */
+
+.like-icon {
+  display: inline-block;
+  width: 5%;
+  height: 5%;
+  margin-right: 0.5rem;
+}
+
+.like-icon.gone {
+  display: none;
+}
+
+.liked-icon {
+  display: none;
+  width: 5%;
+  height: 5%;
+  margin-right: 0.5rem;
+}
+
+.liked-icon.show {
+  display: inline-block;
+  width: 5%;
+  height: 5%;
+  margin-right: 0.5rem;
+}
+
+.comment-icon {
+  width: 5%;
+  height: 5%;
+}
+
+/* .total-likes {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+} */
